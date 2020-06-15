@@ -1,0 +1,15 @@
+<h1>Listar pokemons</h1>
+
+{{#each pokemons}}
+    Nome: {{dataValues.nome}} <br>
+    Cor: {{dataValues.cor}} <br>
+    Imagem: {{dataValues.imagem}}<br>
+    Cadastrado: {{dataValues.createdAt}}<br>
+    <a href="/del-pokemon/{{dataValues.id}}"><button>Apagar</button></a>
+
+    <hr>
+
+{{/each}}
+
+
+<a href="/cad-pokemon/"><button>Voltar</button></a>
